@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/spotlight.css" />
+    <link rel="stylesheet" href="./css/goTop.css" />
+    <link rel="stylesheet" href="./css/tech.css" />
+    <link rel="stylesheet" href="./css/favorites.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./js/animations.js"></script>
+    <script src="./js/smoothScroll.js"></script>
+  </head>
+
+  <body>
+    <div style="position: absolute; margin-top: -10%" id="top"></div>
+
+    <img class="nodes fade-in" src="./images/nodesVector.svg" alt="" />
+
+    <nav class="navbar fade-in navbar-dark navbar-expand-lg py-3 mt-5">
+      <div class="container px-5">
+        <div class="navbar-brand text-light">
+          <span class="fw-bolder">Dev</span
+          ><span style="color: #f06344" class="fw-bolder">Emi</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse text-light"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 fw-bolder">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/rlEmilio"
+                target="_blank"
+              >
+                <img src="./images/github.png" alt="Imagen no disponible"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/emiliojoseruizlopez/"
+                target="_blank"
+                ><img src="./images/linkedin.png" alt="Imagen no disponible"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="mailto:ruizlopezemilio2014@gmail.com"
+                target="_blank"
+                ><img src="./images/mail.png" alt="imagen no disponible"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container px-5 about-me fade-in">
+      <div class="mt-3" style="max-width: 500px">
+        <div class="p-5">
+          <p class="text-light">
+            ¡Hola! Soy un amante de la tecnología, graduado en gestión de ventas
+            y desarrollo web. Tengo conocimientos sobre Front-End, Back-End y
+            Bases de datos. He trabajado con frameworks y herramientas de
+            conterenización, así como en entornos colaborativos. Echa un vistazo
+            a los proyectos en los que he participado.
+          </p>
+          
+            <a href="#projects-page">
+              <button class="projects mt-3 mr-3">Proyectos</button></a
+            >
+            <a href="#tech-link">
+              <button class="languages projects mt-3">Lenguajes</button></a
+            >
+        
+        </div>
+      </div>
+    </section>
+
+    <!--PAGINA PROYECTOS  -->
+    <div class="projects-page" id="projects-page">
+      <!-- Proyecto 1 -->
+      <div class="project-full fade-in">
+        <div class="project-content">
+          <!-- Descripción -->
+          <div class="proyect-description">
+            <div>
+              <h2 class="project-header text-light">KoeShiru</h2>
+            </div>
+            <p class="text-light">
+              Proyecto colaborativo de fin de grado realizado en Spring con JPA
+              y Spring Security, HTML5, JS, CSS, Bootstrap y MySQL. Consiste en
+              una web interactiva que muestra información sobre actores de
+              doblaje de anime. Contiene registro y login, listas, foro,
+              noticias, comunidades donde puedes dejar comentarios, apartado
+              premium de pago, tienda de productos y cuestionarios temáticos.
+            </p>
+
+            <a
+              href="https://github.com/rlEmilio/TFG-dockerizado"
+              target="_blank"
+            >
+              <button class="projects">Ver proyecto</button></a
+            >
+          </div>
+
+          <!-- Carrusel de imágenes -->
+          <div class="projects-carousel">
+            <section class="container px-0 mb-4">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/koe1.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/koe2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/koe3.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/koe4.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/koe5.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <!-- Botones de navegación -->
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExample"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExample"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Video debajo de todo -->
+        <div class="projects-video">
+          <video src="./videos/videoKoe.mp4" controls>
+            <source src="video.mp4" type="video/mp4" />
+            <source src="video.webm" type="video/webm" />
+            <source src="video.ogv" type="video/ogg" />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="project-full fade-in">
+        <div class="project-content">
+          <div class="proyect-description">
+            <div class="project-header">
+              <h2 class="project-header text-light">Dax Snake</h2>
+            </div>
+            <p class="text-light">
+              Juego clásico de Snake ambientado en la saga Jak and Daxter que
+              realizé a modo de práctica de Java. Usé Java AWT, Java Swing y una
+              variedad de elementos como imágenes, fuentes personalizadas y
+              sonido. También tiene un sistema multihilo para manejar las
+              distintas partes del juego como el movimiento de la serpiente y la
+              musica de fondo.
+            </p>
+            <a href="https://github.com/rlEmilio/DaxterSnake" target="_blank">
+              <button class="projects">Ver proyecto</button></a
+            >
+          </div>
+
+          <div class="projects-carousel">
+            <section class="container px-0 mb-4">
+              <div id="carouselDax" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/dax1.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/dax2.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/dax3.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/dax4.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/dax5.PNG"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselDax"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselDax"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="projects-video">
+          <video src="./videos/DaxSnake.mp4" controls>
+            <source src="video.mp4" type="video/mp4" />
+            <source src="video.webm" type="video/webm" />
+            <source src="video.ogv" type="video/ogg" />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="project-full fade-in">
+        <div class="project-content">
+          <div class="proyect-description">
+            <div class="project-header">
+              <h2 class="project-header text-light">Tavern Rush</h2>
+            </div>
+            <p class="text-light">
+              Juego Móvil estilo clicker realizado en JavaScript Vanilla con
+              HTML5, CSS y Bootstrap. Se emplea localStorage para almacenar
+              información. El objetivo del juego es ir administrando recursos y
+              desbloqueando edificios hasta conseguir los materiales suficientes
+              para adquirir la taberna, en el menor tiempo posible.
+            </p>
+            <a href="https://github.com/rlEmilio/TavernRush" target="_blank">
+              <button class="projects">Ver proyecto</button>
+            </a>
+          </div>
+
+          <div class="projects-carousel">
+            <section class="container px-0 mb-4">
+              <div id="carouselTavern" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/tavern1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/tavern2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/tavern3.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/tavern4.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/tavern5.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselTavern"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselTavern"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="projects-video">
+          <video src="./videos/tavern.mp4" controls>
+            <source src="video.mp4" type="video/mp4" />
+            <source src="video.webm" type="video/webm" />
+            <source src="video.ogv" type="video/ogg" />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+
+      <!--Proyecto 4-->
+      <div class="project-full fade-in">
+        <div class="project-content">
+          <div class="proyect-description">
+            <div class="project-header">
+              <h2 class="project-header text-light">Bikemania</h2>
+            </div>
+            <p class="text-light">
+              Juego 2d de PC y móvil que estoy diseñando con el motor Unity.
+              Inspirado en los clásicos de Flash games del mismo nombre,
+              consiste en manejar una moto para ir sorteando una serie de
+              obstaculos en niveles horizontales. Hay 20 niveles con dificultad
+              progresiva. Tiene scripts escritos en C# y sistema de físicas,
+              colisiones, puntuación, temporizador global y de nivel.
+            </p>
+            <a href="https://github.com/rlEmilio/Bikemania" target="_blank">
+              <button class="projects">Ver proyecto</button>
+            </a>
+          </div>
+
+          <div class="projects-carousel">
+            <section class="container px-0 mb-4">
+              <div id="carouselBike" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/bike1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bike2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bike3.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bike4.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bike5.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselBike"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselBike"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="projects-video">
+          <video src="./videos/bikeVideo.mp4" controls>
+            <source src="video.mp4" type="video/mp4" />
+            <source src="video.webm" type="video/webm" />
+            <source src="video.ogv" type="video/ogg" />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="tech-link"></div>
+    <div id="tech-page">
+      <!-- Lenguajes -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">Lenguajes</h4>
+        <div class="tech">
+          <a href="https://www.java.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java"
+            />
+          </a>
+          <a href="https://www.php.net/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP"
+            />
+          </a>
+          <a href="https://www.python.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
+            />
+          </a>
+          <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML"
+            />
+          </a>
+          <a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS"
+            />
+          </a>
+          <a
+            href="https://developer.mozilla.org/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Bases de datos -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">Bases de datos</h4>
+        <div class="tech">
+          <a href="https://www.oracle.com/database/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+              alt="Oracle SQL Developer"
+            />
+          </a>
+          <a href="https://www.mysql.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">Frameworks</h4>
+        <div class="tech">
+          <a href="https://getbootstrap.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+            />
+          </a>
+          <a href="https://angular.io/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+              alt="Angular"
+            />
+          </a>
+          <a href="https://spring.io/projects/spring-boot" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+              alt="Spring Boot"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Control de versiones -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">Control de versiones</h4>
+        <div class="tech">
+          <a href="https://git-scm.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Servidores -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">Servidores</h4>
+        <div class="tech">
+          <a href="https://httpd.apache.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+              alt="Apache Server"
+            />
+          </a>
+          <a href="https://nginx.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+              alt="Nginx"
+            />
+          </a>
+          <a href="http://tomcat.apache.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg"
+              alt="Tomcat"
+            />
+          </a>
+          <a href="https://www.kernel.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+              alt="Linux"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- IDEs -->
+      <div class="tech-group fade-in">
+        <h4 class="text-light">IDEs</h4>
+        <div class="tech">
+          <a href="https://www.jetbrains.com/idea/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+              alt="IntelliJ IDEA"
+            />
+          </a>
+          <a href="https://netbeans.apache.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg"
+              alt="NetBeans"
+            />
+          </a>
+          <a href="https://www.eclipse.org/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
+              alt="Eclipse"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="Visual Studio Code"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Curiosidades sobre mi-->
+    <div class="favorite-section">
+      <h4 class="text-light favorite-header fade-in">Cosas favoritas</h4>
+
+      <!--libros-->
+      <h4 class="text-light groupFavorite-header fade-in">Libros</h4>
+      <div class="groupFavorite fade-in">
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.amazon.es/nombre-del-viento-BEST-SELLER/dp/8499082475"
+            ><img src="./images/nombreViento.jpg" alt=""
+          /></a>
+          <p>El Nombre del Viento</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.amazon.es/guardi%C3%A1n-entre-centeno-libro-bolsillo-ebook/dp/B087C75XTF"
+            ><img src="./images/guardian_.jpg" alt=""
+          /></a>
+          <p>El Guardián entre el Centeno</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.amazon.es/1984-Contempor%C3%A1nea-CONTEMPORANEA-George-Orwell/dp/8499890946"
+            ><img src="./images/1984.jpg" alt=""
+          /></a>
+          <p>1984</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.amazon.es/imperio-los-dragones-BEST-SELLER/dp/8483462141"
+            ><img src="./images/imperio.jpg" alt=""
+          /></a>
+          <p>El Imperio de los Dragones</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.amazon.es/Respuestas-sorprendentes-preguntas-cotidianas-Curiosidades/dp/8449336511"
+            ><img src="./images/respuestas.jpg" alt=""
+          /></a>
+          <p>Respuestas Sorprendentes</p>
+        </div>
+      </div>
+
+      <!--juegos-->
+      <h4 class="text-light groupFavorite-header fade-in">Videojuegos</h4>
+      <div class="groupFavorite fade-in">
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/?l=spanish&curator_clanid=11846346"
+            ><img src="./images/red.jpg" alt=""
+          /></a>
+          <p>Red Dead Redemption 2</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
+            ><img src="./images/cyberpunk.jpg" alt=""
+          /></a>
+          <p>Cyberpunk 2077</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
+            ><img src="./images/skyrim.jpg" alt=""
+          /></a>
+          <p>Skyrim</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/2050650/Resident_Evil_4/"
+            ><img src="./images/resident.jpg" alt=""
+          /></a>
+          <p>Resident Evil 4</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.playstation.com/es-es/product/EP9000-CUSA07934_00-JAKDAXTER0BUNDLE"
+            ><img src="./images/daxter.jpg" alt=""
+          /></a>
+          <p>Jak And Daxter</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://store.steampowered.com/app/2531310/The_Last_of_Us_Parte_II_Remastered/"
+            ><img src="./images/last.jpg" alt=""
+          /></a>
+          <p>The Last Of Us 2</p>
+        </div>
+      </div>
+
+      <!--peliculas-->
+
+      <h4 class="text-light groupFavorite-header fade-in">Pelis y series</h4>
+      <div class="groupFavorite fade-in">
+        <div class="item text-light text-center">
+          <a target="_blank" href="https://www.imdb.com/es-es/title/tt6751668/"
+            ><img src="./images/parasitos.jpg" alt=""
+          /></a>
+          <p>Parásitos</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt0816692/?ref_=fn_all_ttl_1"
+            ><img src="./images/interstellar.jpg" alt=""
+          /></a>
+          <p>Interstellar</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt0114369/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_seven"
+            ><img src="./images/seven.jpg" alt=""
+          /></a>
+          <p>Seven</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt0388629/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_one%2520piece"
+            ><img src="./images/onepiece.jpg" alt=""
+          /></a>
+          <p>One Piece</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt0903747/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_breaking"
+            ><img src="./images/breaking.jpg" alt=""
+          /></a>
+          <p>Breaking Bad</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt0434706/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_monster"
+            ><img src="./images/monster.jpg" alt=""
+          /></a>
+          <p>Monster</p>
+        </div>
+        <div class="item text-light text-center">
+          <a
+            target="_blank"
+            href="https://www.imdb.com/es-es/title/tt12853970/?ref_=fn_all_ttl_1"
+            ><img src="./images/shinchan.jpg" alt=""
+          /></a>
+          <p>Shin Chan</p>
+        </div>
+      </div>
+    </div>
+    <div class="spotlight-layer" aria-hidden="true"></div>
+    <div class="spot" aria-hidden="true"></div>
+
+    <a href="#top" title="Volver arriba"
+      ><button class="scroll-top">↑</button></a
+    >
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/spotlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+/* Fondo general */
+body {
+  /* background-color: #0d0d1a; azul oscuro casi negro */
+  background-color: #2e3d6f;
+  /* background: linear-gradient(180deg, #0d0d1a 0%, #141b2d 100%); */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  min-height: 100vh;
+  text-shadow:  0 2px 8px rgba(0, 0, 0, 0.4);
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar .container {
+  display: flex !important;
+  justify-content: space-between !important; 
+  align-items: center !important;
+  width: 100%;
+ 
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  /* cursor: pointer;
+  transition: ease-in-out 300ms; */
+  
+
+}
+
+/* .navbar-brand:hover {
+  transform: scale(1.05);
+} */
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-left: 15px;
+ 
+}
+
+
+
+.navbar-nav .nav-link:hover {
+  color: #127dff !important;
+  transition: 0.3s;
+}
+
+/* Sección principal centrada */
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  /* text-align: center; */
+  margin-top: -5rem;
+  font-size: large;
+  text-shadow:  0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Caja del texto */
+.about-me div {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  color: #fff;
+}
+
+
+
+
+/* Botón proyectos */
+.projects {
+  background-color: #f06344;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projects:hover {
+  background-color: #eb5533;
+  transform: translateY(-2px);
+}
+
+.nodes {
+  position: fixed;
+  width: 100%;
+  top: 55%;
+  transform: translateX(50%, -50%);
+  transform: rotate(160deg);
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.projects-page {
+  position: relative;
+  z-index: z;
+}
+
+.nav-link img {
+  width: 55px;
+  height: 55px;
+  transition: ease-in-out 300ms;
+}
+
+.nav-link img:hover {
+  transform: scale(1.1);
+}
+
+/* Animación fade-in */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+
+    .about-me > div > .p-5 {
+    display: flex !important;       
+    flex-direction: column;         
+    align-items: center;            
+    text-align: center;
+  }
+  .about-me > div > .p-5 .projects {
+    margin: 0 !important;
+    margin-top: 20px  !important;
+  }
+
+ 
+}
+

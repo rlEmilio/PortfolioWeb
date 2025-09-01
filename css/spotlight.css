@@ -1,0 +1,74 @@
+:root {
+  --spot-size: 360px;
+  --spot-scale: 1;
+  --x: 50vw;
+  --y: 50vh;
+}
+
+/* Capa que oscurece todo y deja visible la zona del spotlight */
+/* .spotlight-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(0, 0, 0, 0.6) 60%
+  );
+} */
+
+/* Círculo brillante que sigue al ratón */
+.spot {
+  --size: var(--spot-size);
+  position: fixed;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  transform: translate(-50%, -50%) scale(var(--spot-scale));
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -2;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.25) 18%,
+    rgba(255, 255, 255, 0.06) 36%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  filter: blur(18px) saturate(120%);
+  transition: opacity 300ms ease, transform 120ms ease;
+  opacity: 1;
+  will-change: transform, left, top;
+  mix-blend-mode: screen;
+}
+
+/* Halo extra para dar más realismo */
+.spot::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 220px;
+  height: 220px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  filter: blur(36px);
+  border-radius: 50%;
+}
+
+/* Cuando el ratón se va, se oculta el foco */
+.no-cursor .spot {
+  opacity: 0;
+}
+
+/* Spotlight más pequeño en móviles */
+@media (max-width: 700px) {
+  :root {
+    --spot-size: 260px;
+  }
+}

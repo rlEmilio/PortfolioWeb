@@ -1,0 +1,138 @@
+
+
+
+/* Contenedor principal centrado */
+.project-full {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 5rem auto 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 20rem;
+}
+
+/* Contenedor de cabecera + descripción + carrusel */
+.project-content {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  align-items: center; 
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Descripción */
+.proyect-description {
+  flex: 1 1 100%;
+  max-width: 300px;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.proyect-description button {
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+/* Carrusel de imágenes */
+.projects-carousel {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Video en carrusel */
+.projects-video {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  
+}
+
+.projects-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Ajuste de imágenes del carrusel */
+.projects-carousel img {
+  width: 100%;       
+  max-width: 100%;   
+  height: auto;     
+  border-radius: 8px;
+  display: block;
+  margin: 0; 
+  min-height: 300px;        
+}
+
+/* Carrusel: estilo de flechas */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Transición de items del carrusel */
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Header de proyecto */
+.project-header {
+  margin-bottom: 2rem;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (min-width: 900px) {
+  .project-content {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .proyect-description {
+    flex: 1 1 30%;  
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-carousel {
+    flex: 1 1 70%; 
+  }
+}
+
+.projects-page {
+  margin-top: 20rem;
+}
+
+@media screen and (max-width: 900px) {
+.project-full{
+  margin-bottom: 30%;
+}
+.about-me{
+  margin-top: 10%;
+}
+}

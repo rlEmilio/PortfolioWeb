@@ -66,9 +66,11 @@
   opacity: 0;
 }
 
-/* Spotlight más pequeño en móviles */
+/* Spotlight quitado en moviles */
 @media (max-width: 700px) {
-  :root {
-    --spot-size: 260px;
-  }
+   
+    .spot{
+      display: none;
+    }
+  
 }

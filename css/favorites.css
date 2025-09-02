@@ -72,11 +72,13 @@
   .favorite-section {
     margin-top: 20%;
     padding: 2rem 1rem;
+   
   }
 
   .favorite-header {
     font-size: 1.6rem;
     margin: 2rem 0;
+    margin-bottom: 8rem;
   }
 
   .groupFavorite-header {

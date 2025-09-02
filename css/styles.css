@@ -1,8 +1,13 @@
 /* Fondo general */
 body {
   /* background-color: #0d0d1a; azul oscuro casi negro */
-  background-color: #101526;
-  /* background: linear-gradient(180deg, #0d0d1a 0%, #141b2d 100%); */
+    background-color:#112959; 
+
+   /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 50%, #a1c4fd 100%); */
+
+
+
+
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -42,7 +47,7 @@ body {
 
 
 .navbar-nav .nav-link:hover {
-  color: #127dff !important;
+  /* color: #127dff !important; */
   transition: 0.3s;
 }
 

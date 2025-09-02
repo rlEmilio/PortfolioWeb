@@ -5,20 +5,7 @@
   --y: 50vh;
 }
 
-/* Capa que oscurece todo y deja visible la zona del spotlight */
-/* .spotlight-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  background: radial-gradient(
-    circle at var(--x) var(--y),
-    rgba(255, 255, 255, 0.02) 0%,
-    rgba(0, 0, 0, 0.6) 60%
-  );
-} */
-
-/* Círculo brillante que sigue al ratón */
+/* Círculo brillante que sigue al ratón o al dedo */
 .spot {
   --size: var(--spot-size);
   position: fixed;
@@ -44,7 +31,6 @@
   mix-blend-mode: screen;
 }
 
-/* Halo extra para dar más realismo */
 .spot::after {
   content: "";
   position: absolute;
@@ -61,16 +47,15 @@
   border-radius: 50%;
 }
 
-/* Cuando el ratón se va, se oculta el foco */
 .no-cursor .spot {
   opacity: 0;
 }
 
-/* Spotlight quitado en moviles */
+/* Ajustes móviles */
 @media (max-width: 700px) {
-   
-    .spot{
-      display: none;
-    }
-  
+  .spot {
+    --spot-size: 200px;  /* más pequeño en móviles */
+    display: block;
+    opacity: 0;           /* inicial invisible hasta tocar */
+  }
 }

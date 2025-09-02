@@ -10,6 +10,10 @@
   margin-bottom: 2.5rem; 
 }
 
+#tech-page{
+  margin-top: -2rem;
+}
+
 .tech img {
   width: 60px;
   height: 60px;

@@ -124,6 +124,7 @@
     flex: 1 1 30%;  
     max-width: 400px;
     display: flex;
+    justify-content: start;
     flex-direction: column;
   }
 
@@ -136,10 +137,16 @@
 }
 
 @media screen and (max-width: 900px) {
-.project-full{
-  margin-bottom: 30%;
-}
-.about-me{
-  margin-top: 10%;
-}
+  .project-content {
+    align-items: flex-start; 
+  }
+
+  .proyect-description {
+    max-width: 100%;  
+    padding: 0;        
+  }
+
+  .proyect-description button {
+    align-self: flex-start; 
+  }
 }

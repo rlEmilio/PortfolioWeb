@@ -129,24 +129,43 @@ body {
   opacity: 1;
 }
 
+
+
+
+
+/* Icono overlay */
+.overlay-icon {
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 6px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+
 @media screen and (max-width: 700px) {
-
-    .about-me > div > .p-5 {
-    display: flex !important;       
-    flex-direction: column;         
-    align-items: center;            
-    text-align: center;
-  }
-  .about-me > div > .p-5 .projects {
-    margin: 0 !important;
-    margin-top: 20px  !important;
+  .about-me {
+    justify-content: flex-start;   
+    align-items: flex-start;       
+    margin-top: 5rem;             
+    margin-bottom: 10rem;         
+    padding: 0 1rem;             
   }
 
-  .about-me p{
-    text-align: start;
+  .about-me div {
+    max-width: 100%;   
+    padding: 1rem;     
   }
-  
 
- 
+  .about-me p {
+    text-align: left;  
+  }
+
+  .about-me .projects {
+    align-self: flex-start;  
+    margin-top: 1rem;
+  }
 }
 

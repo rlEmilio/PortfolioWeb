@@ -2,7 +2,7 @@
 body {
   /* background-color: */
   /* background-color:#0F4C81;  */
-background: linear-gradient(90deg, #3a4a79 0%, #3c60ba 100%);
+background: linear-gradient(90deg, #040406 0%, #3c60ba 100%);
 
 
 
@@ -123,6 +123,12 @@ background: linear-gradient(90deg, #3a4a79 0%, #3c60ba 100%);
 .fade-in.show {
   opacity: 1;
 }
+
+ .about-me  img{
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+ }
 
 /* Icono overlay */
 .overlay-icon {

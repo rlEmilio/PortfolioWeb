@@ -1,9 +1,8 @@
 /* Fondo general */
 body {
-  /* background-color: #0d0d1a; azul oscuro casi negro */
-    background-color:#112959; 
-
-   /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 50%, #a1c4fd 100%); */
+  /* background-color: */
+  /* background-color:#0F4C81;  */
+background: linear-gradient(90deg, #3a4a79 0%, #3c60ba 100%);
 
 
 
@@ -14,24 +13,21 @@ body {
   z-index: 1;
   position: relative;
   min-height: 100vh;
-  text-shadow:  0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   font-family: "Rubik", sans-serif;
 }
 
 .navbar .container {
   display: flex !important;
-  justify-content: space-between !important; 
+  justify-content: space-between !important;
   align-items: center !important;
   width: 100%;
- 
 }
 
 .navbar-brand {
   font-size: 2.5rem;
   /* cursor: pointer;
   transition: ease-in-out 300ms; */
-  
-
 }
 
 /* .navbar-brand:hover {
@@ -41,10 +37,7 @@ body {
 .navbar-nav .nav-link {
   color: white !important;
   margin-left: 15px;
- 
 }
-
-
 
 .navbar-nav .nav-link:hover {
   /* color: #127dff !important; */
@@ -60,26 +53,21 @@ body {
   margin-top: 16rem;
   margin-bottom: 50rem;
   font-size: large;
-  text-shadow:  0 4px 12px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
-
-
 
 /* Caja del texto */
 .about-me div {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(130, 130, 130, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding: 20px;
   color: #fff;
 }
 
-
-
-
 /* Botón proyectos */
 .projects {
-  background-color: #f06344;
+  background-color: #f36b4c;
   border: none;
   padding: 8px 18px;
   border-radius: 6px;
@@ -90,18 +78,18 @@ body {
 }
 
 .projects:hover {
-  background-color: #eb5533;
+  background-color: #e66143;
   transform: translateY(-2px);
 }
 
 .nodes {
   position: fixed;
   width: 100%;
-  top: 65%;
+  top: 10%;
   transform: translateX(50%, -50%);
-  transform: rotate(160deg);
+  transform: rotate(170deg);
   z-index: -999;
-  opacity: 0.35 !important; 
+  opacity: 0.15 !important;
   pointer-events: none;
 }
 
@@ -118,6 +106,8 @@ body {
   width: 55px;
   height: 55px;
   transition: ease-in-out 300ms;
+  box-shadow: 0 0.35px 0.45px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 .nav-link img:hover {
@@ -134,10 +124,6 @@ body {
   opacity: 1;
 }
 
-
-
-
-
 /* Icono overlay */
 .overlay-icon {
   font-size: 1.2rem;
@@ -149,28 +135,27 @@ body {
   transition: transform 0.3s ease;
 }
 
-
 @media screen and (max-width: 700px) {
   .about-me {
-    justify-content: flex-start;   
-    align-items: flex-start;       
-    margin-top: 5rem;             
-    margin-bottom: 10rem;         
-    padding: 0 1rem;             
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    padding: 0 1rem;
   }
 
   .about-me div {
-    max-width: 100%;   
-    padding: 1rem;     
+    max-width: 100%;
+    padding: 0.3rem;
   }
 
   .about-me p {
-    text-align: left;  
+    text-align: left;
+    font-size: 16px;
   }
 
   .about-me .projects {
-    align-self: flex-start;  
+    align-self: flex-start;
     margin-top: 1rem;
   }
 }
-

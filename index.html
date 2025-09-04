@@ -13,7 +13,7 @@
     />
     <link
       rel="icon"
-      href="./images/favicon.svg"
+      href="./images/simboloEmi.svg"
       sizes="32x32"
       type="image/png"
     />
@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/favorites.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
       rel="stylesheet"
@@ -33,22 +34,25 @@
 
     <script src="./js/animations.js"></script>
     <script src="./js/smoothScroll.js"></script>
+    
   </head>
 
   <body>
+    <!-- Contenedor de bolas rebotando -->
 
-    
+
     <div style="position: absolute; margin-top: -10%" id="top"></div>
 
-   
+    <!-- <img class="nodes fade-in" src="./images/nodes.svg" alt="" /> -->
 
-    <img class="nodes fade-in" src="./images/nodesVector.svg" alt="" />
+    <nav class="navbar fade-in navbar-dark navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand text-dark">
+          <!-- Imagen por defecto (desktop/tablet) -->
+          <img src="./images/logoEmi.svg" alt="" />
 
-    <nav class="navbar fade-in navbar-dark navbar-expand-lg py-3 mt-5">
-      <div class="container px-5">
-        <div class="navbar-brand text-light">
-          <span class="fw-bolder">Dev</span
-          ><span style="color: #ff6846" class="fw-bolder">Emi</span>
+          <!-- <span class="fw-bolder">Dev</span
+          ><span style="color: #ff6846" class="fw-bolder">Emi</span> -->
         </div>
         <button
           class="navbar-toggler"
@@ -96,18 +100,16 @@
         </div>
       </div>
     </nav>
-
+<div id="bouncing-balls-container"></div>
     <section class="container px-5 about-me fade-in">
-     
-
       <div class="mt-3" style="max-width: 500px">
         <div class="p-5">
-          <p class="text-light">
+          <p class="text-dark">
             ¡Hola! Soy un amante de la tecnología, graduado en gestión de ventas
             y desarrollo web. Tengo conocimientos sobre Front-End, Back-End y
             Bases de datos. He trabajado con frameworks y herramientas de
-            contenedorización, así como en entornos colaborativos. Echa un vistazo
-            a los proyectos en los que he participado.
+            contenedorización, así como en entornos colaborativos. Echa un
+            vistazo a los proyectos en los que he participado.
           </p>
 
           <a href="#projects-page">
@@ -531,11 +533,14 @@
     </div>
 
     <div id="tech-link"></div>
-     <h4 class="text-light favorite-header fade-in">Tecnologías <span class="overlay-icon">🔗</span></h4>
+   
     <div id="tech-page">
+       <h4 class="text-dark  tech-header fade-in">
+      Tecnologías <span class="overlay-icon">🔗</span>
+    </h4>
       <!-- Lenguajes -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">Lenguajes</h4>
+        <h4 class="text-dark">Lenguajes</h4>
         <div class="tech">
           <a href="https://www.java.com/" target="_blank">
             <img
@@ -581,7 +586,7 @@
 
       <!-- Bases de datos -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">Bases de datos</h4>
+        <h4 class="text-dark">Bases de datos</h4>
         <div class="tech">
           <a href="https://www.oracle.com/database/" target="_blank">
             <img
@@ -600,7 +605,7 @@
 
       <!-- Frameworks -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">Frameworks</h4>
+        <h4 class="text-dark">Frameworks</h4>
         <div class="tech">
           <a href="https://getbootstrap.com/" target="_blank">
             <img
@@ -625,7 +630,7 @@
 
       <!-- Control de versiones -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">Control de versiones</h4>
+        <h4 class="text-dark">Control de versiones</h4>
         <div class="tech">
           <a href="https://git-scm.com/" target="_blank">
             <img
@@ -644,7 +649,7 @@
 
       <!-- Servidores -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">Servidores</h4>
+        <h4 class="text-dark">Servidores</h4>
         <div class="tech">
           <a href="https://httpd.apache.org/" target="_blank">
             <img
@@ -675,7 +680,7 @@
 
       <!-- IDEs -->
       <div class="tech-group fade-in">
-        <h4 class="text-light">IDEs</h4>
+        <h4 class="text-dark">IDEs</h4>
         <div class="tech">
           <a href="https://www.jetbrains.com/idea/" target="_blank">
             <img
@@ -707,13 +712,14 @@
 
     <!--Curiosidades sobre mi-->
     <div class="favorite-section">
-      <h4 class="text-light favorite-header fade-in">Cosas favoritas <span class="overlay-icon">🔗</span></h4>
+      <h4 class="text-light favorite-header fade-in">
+        Cosas favoritas <span class="overlay-icon">🔗</span>
+      </h4>
 
-      
       <!--libros-->
       <h4 class="text-light groupFavorite-header fade-in">Libros</h4>
       <div class="groupFavorite fade-in">
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.amazon.es/nombre-del-viento-BEST-SELLER/dp/8499082475"
@@ -721,7 +727,7 @@
           /></a>
           <p>El Nombre del Viento</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.amazon.es/guardi%C3%A1n-entre-centeno-libro-bolsillo-ebook/dp/B087C75XTF"
@@ -729,7 +735,7 @@
           /></a>
           <p>El Guardián entre el Centeno</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.amazon.es/1984-Contempor%C3%A1nea-CONTEMPORANEA-George-Orwell/dp/8499890946"
@@ -737,7 +743,7 @@
           /></a>
           <p>1984</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.amazon.es/imperio-los-dragones-BEST-SELLER/dp/8483462141"
@@ -745,7 +751,7 @@
           /></a>
           <p>El Imperio de los Dragones</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.amazon.es/Respuestas-sorprendentes-preguntas-cotidianas-Curiosidades/dp/8449336511"
@@ -758,7 +764,7 @@
       <!--juegos-->
       <h4 class="text-light groupFavorite-header fade-in">Videojuegos</h4>
       <div class="groupFavorite fade-in">
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/?l=spanish&curator_clanid=11846346"
@@ -766,7 +772,7 @@
           /></a>
           <p>Red Dead Redemption 2</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
@@ -774,7 +780,7 @@
           /></a>
           <p>Cyberpunk 2077</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
@@ -782,7 +788,7 @@
           /></a>
           <p>Skyrim</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.steampowered.com/app/2050650/Resident_Evil_4/"
@@ -790,7 +796,7 @@
           /></a>
           <p>Resident Evil 4</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.playstation.com/es-es/product/EP9000-CUSA07934_00-JAKDAXTER0BUNDLE"
@@ -798,7 +804,7 @@
           /></a>
           <p>Jak And Daxter</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://store.steampowered.com/app/2531310/The_Last_of_Us_Parte_II_Remastered/"
@@ -812,13 +818,13 @@
 
       <h4 class="text-light groupFavorite-header fade-in">Pelis y series</h4>
       <div class="groupFavorite fade-in">
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a target="_blank" href="https://www.imdb.com/es-es/title/tt6751668/"
             ><img src="./images/parasitos.jpg" alt=""
           /></a>
           <p>Parásitos</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt0816692/?ref_=fn_all_ttl_1"
@@ -826,7 +832,7 @@
           /></a>
           <p>Interstellar</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt0114369/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_seven"
@@ -834,7 +840,7 @@
           /></a>
           <p>Seven</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt0388629/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_one%2520piece"
@@ -842,7 +848,7 @@
           /></a>
           <p>One Piece</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt0903747/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_breaking"
@@ -850,7 +856,7 @@
           /></a>
           <p>Breaking Bad</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt0434706/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_monster"
@@ -858,7 +864,7 @@
           /></a>
           <p>Monster</p>
         </div>
-        <div class="item text-light text-center">
+        <div class="item text-dark text-center">
           <a
             target="_blank"
             href="https://www.imdb.com/es-es/title/tt12853970/?ref_=fn_all_ttl_1"
@@ -874,6 +880,7 @@
     <a href="#top" title="Volver arriba"
       ><button class="scroll-top">↑</button></a
     >
+   
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -887,6 +894,8 @@
       crossorigin="anonymous"
     ></script>
 
+       
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
@@ -894,5 +903,6 @@
     ></script>
 
     <script src="./js/spotlight.js"></script>
+    
   </body>
 </html>

@@ -1,33 +1,43 @@
 /* Fondo general */
 body {
   /* background-color: */
-  /* background-color:#0F4C81;  */
-background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
+  background-color: #f0f0f0;
+  /* background: linear-gradient(90deg, #023e8a 0%, #0278b5 100%); */
 
-
-
-
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   margin: 0;
   padding: 0;
   z-index: 1;
   position: relative;
   min-height: 100vh;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   font-family: "Rubik", sans-serif;
 }
-
 .navbar .container {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  width: 100%;
+}
+
+.navbar {
+  /* background-color: #000000; */
+  background: linear-gradient(90deg, #06080f 0%, #001f39 100%); 
+  position: relative;
+  z-index: -2;
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   /* cursor: pointer;
   transition: ease-in-out 300ms; */
+}
+
+.navbar-brand img {
+  width: 300px;
+  height: auto;
 }
 
 /* .navbar-brand:hover {
@@ -50,24 +60,24 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
   justify-content: center;
   align-items: center;
   /* text-align: center; */
-  margin-top: 16rem;
-  margin-bottom: 50rem;
+  margin-top: 15rem;
+  margin-bottom: 40rem;
   font-size: large;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ 
 }
 
 /* Caja del texto */
 .about-me div {
-  background-color: rgba(130, 130, 130, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color:  rgb(219, 219, 219, 0.115);
+  border: 1px solid rgba(201, 201, 201, 0.236);
   border-radius: 8px;
   padding: 20px;
-  color: #fff;
+
 }
 
 /* Botón proyectos */
 .projects {
-  background-color: #f36b4c;
+  background-color: #27c0df;
   border: none;
   padding: 8px 18px;
   border-radius: 6px;
@@ -78,20 +88,20 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
 }
 
 .projects:hover {
-  background-color: #e66143;
+  background-color: #1586be;
   transform: translateY(-2px);
 }
 
-.nodes {
+/* .nodes {
   position: fixed;
   width: 100%;
-  top: 10%;
+  top: 2rem;
   transform: translateX(50%, -50%);
   transform: rotate(170deg);
   z-index: -999;
-  opacity: 0.15 !important;
+  opacity: 0.95 !important;
   pointer-events: none;
-}
+} */
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -106,12 +116,14 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
   width: 55px;
   height: 55px;
   transition: ease-in-out 300ms;
-  box-shadow: 0 0.35px 0.45px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+
+  z-index: 2;
 }
 
 .nav-link img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  box-shadow: 0 0.55px 0.55px rgba(43, 170, 244, 0.774);
+  border-radius: 50%;
 }
 
 /* Animación fade-in */
@@ -124,11 +136,11 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
   opacity: 1;
 }
 
- .about-me  img{
-    width: 300px;
-    height: auto;
-    margin-right: 100px;
- }
+.about-me img {
+  width: 300px;
+  height: auto;
+  margin-right: 100px;
+}
 
 /* Icono overlay */
 .overlay-icon {
@@ -141,7 +153,10 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
   transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+@media screen and (max-width: 900px) {
   .about-me {
     justify-content: flex-start;
     align-items: flex-start;
@@ -150,18 +165,55 @@ background: linear-gradient(90deg, #2f2f6e 0%, #3c60ba 100%);
     padding: 0 1rem;
   }
 
-  .about-me div {
-    max-width: 100%;
-    padding: 0.3rem;
-  }
+  @media screen and (max-width: 900px) {
+    .navbar .container {
+      display: flex !important;
+      justify-content: space-between !important; /* Logo izquierda, toggler derecha */
+      align-items: center !important;
+      padding: 0 1rem; /* Para no pegarlo a los bordes */
+    }
 
-  .about-me p {
-    text-align: left;
-    font-size: 16px;
-  }
+    .navbar .container {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0 1rem;
+    }
 
-  .about-me .projects {
-    align-self: flex-start;
-    margin-top: 1rem;
+    .navbar-brand {
+      margin: 0 !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+    }
+
+    .navbar-toggler {
+      margin: 0 !important;
+      align-self: center;
+    }
+
+    .navbar {
+      padding: 0.3rem 0;
+    }
+
+    .about-me div {
+      max-width: 100%;
+      padding: 0.3rem;
+    }
+
+    .about-me p {
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .about-me .projects {
+      align-self: flex-start;
+      margin-top: 1rem;
+    }
   }
 }

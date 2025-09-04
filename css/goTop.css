@@ -5,7 +5,7 @@
   width: 40px;
   height: 30px;
   background-color: rgba(31, 32, 38, 0.6);
-  color: #f06344;
+  color: #28d8ff;
   font-size: 35px;
   border-radius: 50%;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .scroll-top:hover {
-  color: #f06344;
+  color: #28b4ff;
 }
 
 .scroll-top.show {

@@ -1,17 +1,21 @@
 /* Fondo general */
 body {
   /* background-color: */
-  background-color: #f0f0f0;
+  background-color: #F2F3F4;
   /* background: linear-gradient(90deg, #023e8a 0%, #0278b5 100%); */
 
-  /* font-family: Arial, Helvetica, sans-serif; */
+ 
   margin: 0;
   padding: 0;
   z-index: 1;
   position: relative;
   min-height: 100vh;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  font-family: "Rubik", sans-serif;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: 'IBM Plex Mono', monospace;
+
+
+
 }
 .navbar .container {
   display: flex !important;
@@ -68,10 +72,10 @@ body {
 
 /* Caja del texto */
 .about-me div {
-  background-color:  rgb(219, 219, 219, 0.115);
+  background-color:  rgba(255, 255, 255, 0.914);
   border: 1px solid rgba(201, 201, 201, 0.236);
   border-radius: 8px;
-  padding: 20px;
+  padding: 0px;
 
 }
 

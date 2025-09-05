@@ -256,7 +256,7 @@ body {
   .about-me {
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
     padding: 0 1rem;
     flex-direction: column;
@@ -283,12 +283,12 @@ body {
   .skills-container {
     width: 100%;
     max-width: 350px;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   .name {
     margin-left: 10%;
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 }
 

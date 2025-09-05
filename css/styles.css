@@ -1,7 +1,7 @@
 /* Fondo general */
 body {
   /* background-color: */
-  background-color: #F2F3F4;
+  background-color: #ffffff;
   /* background: linear-gradient(90deg, #023e8a 0%, #0278b5 100%); */
 
  
@@ -17,10 +17,60 @@ body {
 
 
 }
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #5691ff, #0dffe7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  margin-bottom: 7rem;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.skills-container {
+  flex: 1 1 300px;         
+  width: 100%;              
+  max-width: 500px;       
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill span {
+  flex: 0 0 120px;         
+  text-align: left;
+}
+
+.skill-bar {
+  flex: 1;                  
+  height: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, #a600ff, #00eeff);
+}
+
+
 .navbar .container {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+   padding: 0 1rem;
 }
 
 .navbar {
@@ -41,7 +91,7 @@ body {
 
 .navbar-brand img {
   width: 300px;
-  height: auto;
+  height: 60px;
 }
 
 /* .navbar-brand:hover {
@@ -53,6 +103,7 @@ body {
   margin-left: 15px;
 }
 
+
 .navbar-nav .nav-link:hover {
   /* color: #127dff !important; */
   transition: 0.3s;
@@ -61,22 +112,34 @@ body {
 /* Sección principal centrada */
 .about-me {
   display: flex;
+  flex-wrap: wrap;           
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
-  margin-top: 15rem;
-  margin-bottom: 40rem;
-  font-size: large;
- 
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+  gap: 10rem;                 
 }
 
-/* Caja del texto */
-.about-me div {
-  background-color:  rgba(255, 255, 255, 0.914);
-  border: 1px solid rgba(201, 201, 201, 0.236);
-  border-radius: 8px;
-  padding: 0px;
+.about-me-content {
+  display: flex;
+  flex-direction: column;     
+  align-items: center;
+  gap: 2rem;
+  max-width: 100%;
+}
 
+.about-me-content img {
+  width: 200px; 
+  height: auto;
+}
+
+.description {
+  flex: 1 1 300px;           
+  background-color: rgba(194, 194, 194, 0.076);
+  border: 1px solid rgba(225, 225, 225, 0.092);
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* Botón proyectos */
@@ -117,8 +180,8 @@ body {
 }
 
 .nav-link img {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   transition: ease-in-out 300ms;
 
   z-index: 2;
@@ -159,65 +222,73 @@ body {
 
 
 
-
 @media screen and (max-width: 900px) {
+
+  .navbar .container {
+    display: flex !important;
+    justify-content: space-between !important; 
+    align-items: center !important;
+    padding: 0 1rem; 
+    overflow: visible;  
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: flex-start;    
+    /* padding: 0.3rem 0;  */
+    overflow: visible; 
+  }
+  .navbar-brand img {        
+    width: 60px;   
+    height: 60px;
+    display: block;
+  }
+
+  .navbar-toggler {
+    margin: 0 !important;
+    align-self: center;
+  }
+
+  .navbar {
+    padding: 0.3rem 0;
+  }
+
+  /* Ajustes de About-me para móviles */
   .about-me {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 5rem;
     margin-bottom: 10rem;
     padding: 0 1rem;
+    flex-direction: column;
+    
+    
   }
 
-  @media screen and (max-width: 900px) {
-    .navbar .container {
-      display: flex !important;
-      justify-content: space-between !important; /* Logo izquierda, toggler derecha */
-      align-items: center !important;
-      padding: 0 1rem; /* Para no pegarlo a los bordes */
-    }
+  .about-me .description {
+    width: 100%; /* Para que sea responsiva */
+    max-width: 330px;
+    padding: 0.3rem;
+  }
 
-    .navbar .container {
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      padding: 0 1rem;
-    }
+  .about-me p {
+    text-align: left;
+    font-size: 16px;
+  }
 
-    .navbar-brand {
-      margin: 0 !important;
-      display: flex;
-      align-items: center;
-    }
+  .about-me .projects {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
 
-    .navbar-brand img {
-      max-width: 200px;
-      height: auto;
-      display: block;
-    }
+  .skills-container {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 5rem;
+  }
 
-    .navbar-toggler {
-      margin: 0 !important;
-      align-self: center;
-    }
-
-    .navbar {
-      padding: 0.3rem 0;
-    }
-
-    .about-me div {
-      max-width: 100%;
-      padding: 0.3rem;
-    }
-
-    .about-me p {
-      text-align: left;
-      font-size: 16px;
-    }
-
-    .about-me .projects {
-      align-self: flex-start;
-      margin-top: 1rem;
-    }
+  .name {
+    margin-left: 10%;
+    margin-top: 10rem;
   }
 }
+

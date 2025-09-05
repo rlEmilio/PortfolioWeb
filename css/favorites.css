@@ -1,6 +1,6 @@
 /* Contenedor general con fondo translúcido y padding */
 .favorite-section {
- background: linear-gradient(90deg, #131930 0%, #001f39 100%); 
+  background: linear-gradient(90deg, #001f39 0%,  #14324e  100%); 
   backdrop-filter: blur(10px);
   padding: 4% 2%;
   border-radius: 15px;
@@ -76,7 +76,7 @@
 /* --- Responsive --- */
 @media screen and (max-width: 700px) {
   .favorite-section {
-    margin-top: 20%;
+    margin-top: -5%;
     padding: 2rem 1rem;
    
   }

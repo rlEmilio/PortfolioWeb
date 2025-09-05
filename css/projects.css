@@ -1,35 +1,30 @@
-
-
-
+.project-background {
+  background: linear-gradient(90deg, #001f39 0%, #14324e 100%);
+  border-radius: 8px;
+}
 
 /* Contenedor principal centrado */
 .project-full {
   display: flex;
   flex-direction: column; 
   gap: 2rem;
-  width: 100%;
 
-  box-sizing: border-box;
-  margin-bottom: 10rem;
-  /* background-color: #023e8a; */
-     background: linear-gradient(90deg, #131930 0%, #001f39 100%); 
-  padding: 90px;
-  border-radius: 8px;
  
-  
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 20rem;
 }
 
 /* Contenedor de cabecera + descripción + carrusel */
 .project-content {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 2rem;
-  align-items: center; 
-  max-width: 1300px;
+  align-items: center;
   width: 100%;
-  margin: 0 auto; 
+  max-width: 100%;
+  max-height: 100%;
 }
-
 
 /* Descripción */
 .proyect-description {
@@ -55,23 +50,24 @@
 }
 
 /* Video en carrusel */
+
 .projects-video {
-  max-width: 1300px;
+ 
+  width: 100%;
   min-height: 500px;
   position: relative;
   height:100%;
-  justify-content: center;
-  margin: 0 auto;
+  
   
 }
 
 .projects-video video {
-  width: 100%;       
+  width: 1300px;       
   max-width: 100%;   
   height:100%;     
   border-radius: 8px;
   display: block;
-  margin: 0; 
+  margin: 0 auto; 
   min-height: 500px;   
   object-fit: cover;   
 }
@@ -80,12 +76,11 @@
 .projects-carousel img {
   width: 100%;       
   max-width: 100%;   
-      
   border-radius: 8px;
   display: block;
   margin: 0; 
   min-height: 500px;   
-  object-fit: cover;     
+  object-fit: cover;  
 }
 
 /* Carrusel: estilo de flechas */
@@ -95,7 +90,7 @@
   height: 50px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -121,21 +116,24 @@
 }
 
 /* --- RESPONSIVE --- */
+/* --- RESPONSIVE --- */
 @media screen and (min-width: 900px) {
+
+
+
   .project-content {
     flex-direction: row; 
     align-items: center;
-    justify-content: center; /* centra los bloques hijos */
+    justify-content: center;
     gap: 2rem; /* separa descripción y carrusel */
   }
 
   .proyect-description {
-    flex: 0 0 400px; /* ancho fijo para que no ocupe todo */
+    flex: 1 1 30%;  
     max-width: 400px;
     display: flex;
+    justify-content: start;
     flex-direction: column;
-    justify-content: center;
-    text-align: left; /* mantiene texto alineado a la izquierda */
   }
 
   .projects-carousel {
@@ -147,23 +145,25 @@
   }
 }
 
-
-
 .projects-page {
   margin-top: 20rem;
 }
 
 @media screen and (max-width: 900px) {
   .project-content {
-    align-items: flex-start; 
+    align-items: flex-start;
+  } 
+
+  .project-full{
+    margin-top: -10rem;
   }
 
   .proyect-description {
-    max-width: 100%;  
-    padding: 0;        
+    max-width: 100%;
+    padding: 0;
   }
 
   .proyect-description button {
-    align-self: flex-start; 
+    align-self: flex-start;
   }
 }

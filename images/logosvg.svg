@@ -19,8 +19,10 @@
   <circle cx="40" cy="100" r="8" fill="#00b4d8"></circle>
   <circle cx="100" cy="160" r="8" fill="#00b4d8"></circle>
 
-  <!-- texto -->
-  <text x="200" y="115" font-family="Segoe UI, sans-serif" font-size="50" font-weight="600" fill="#023e8a" letter-spacing="2">
-    Dev<tspan fill="url(#grad3)">E</tspan>mi
+  <!-- texto con la E alineada perfectamente -->
+  <text x="200" y="100" font-family="Segoe UI, sans-serif" font-size="90" font-weight="600" letter-spacing="2" fill="#ffffff" dominant-baseline="middle">
+    Dev
+    <tspan fill="url(#grad3)">E</tspan>
+    mi
   </text>
 </svg>

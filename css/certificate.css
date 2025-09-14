@@ -1,5 +1,7 @@
 .certificate {
   margin-top: 8rem;
+  position: relative;
+  
 }
 
 .certificate-link{

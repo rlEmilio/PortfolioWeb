@@ -1,5 +1,6 @@
 .project-background {
-  background: linear-gradient(90deg, #001f39 0%, #14324e 100%);
+  /* background: linear-gradient(90deg, #155a93 0%, #2a557d 100%); */
+  background-color: aliceblue;
   border-radius: 8px;
 }
 
@@ -12,7 +13,7 @@
  
   padding: 2rem;
   box-sizing: border-box;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 /* Contenedor de cabecera + descripción + carrusel */

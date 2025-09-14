@@ -1,8 +1,8 @@
 /* Fondo general */
 body {
   /* background-color: */
-  background-color: #ffffff;
-  /* background: linear-gradient(90deg, #023e8a 0%, #0278b5 100%); */
+  /* background-color: #090909; */
+  background: linear-gradient(90deg, #2b4b67 0%, #15355a 100%);
 
  
   margin: 0;
@@ -20,20 +20,22 @@ body {
 
 .name {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 600; /* un poco más grueso para destacar */
   letter-spacing: 2px;
-  font-size: 3rem;
-  background: linear-gradient(90deg, #5691ff, #0dffe7);
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #e5eef1, #ffffff, #ffffff, #ffffff);
+  background-size: 300% 100%; /* para animaciones suaves si quieres */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 7rem;
-   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 0 1px rgba(217, 247, 255, 0.919); /* brillo sutil para fondo oscuro */
 }
+
 .skills-container {
-  flex: 1 1 300px;         
+  flex: 1 1 400px;         
   width: 100%;              
   max-width: 500px;       
   display: flex;
@@ -65,38 +67,42 @@ body {
   background: linear-gradient(90deg, #a600ff, #00eeff);
 }
 
-
+/* Elimina padding y max-width del container */
 .navbar .container {
   display: flex !important;
   justify-content: space-between !important;
-  align-items: center !important;
-   padding: 0 1rem;
+  padding-inline: 10% !important;
+  max-width: 100% !important;
 }
 
+/* Navbar general */
 .navbar {
-  /* background-color: #000000; */
-  background: linear-gradient(90deg, #06080f 0%, #001f39 100%); 
-  position: relative;
-  z-index: -2;
+  /* background: linear-gradient(90deg, #06080f 0%, #001f39 100%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
 }
 
+/* Logo a la izquierda */
 .navbar-brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  /* cursor: pointer;
-  transition: ease-in-out 300ms; */
+  justify-content: flex-start;
+  padding-left: 1rem; 
 }
 
 .navbar-brand img {
   width: 300px;
-  height: 60px;
+  height: 70px;
 }
 
-/* .navbar-brand:hover {
-  transform: scale(1.05);
-} */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Empuja los links a la derecha */
+}
 
 .navbar-nav .nav-link {
   color: white !important;
@@ -115,9 +121,10 @@ body {
   flex-wrap: wrap;           
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 13rem;
   margin-bottom: 30rem;
-  gap: 10rem;                 
+  gap: 15rem; 
+  width: 100%;                
 }
 
 .about-me-content {
@@ -134,12 +141,13 @@ body {
 }
 
 .description {
-  flex: 1 1 300px;           
+  flex: 1 1 500px;           
   background-color: rgba(194, 194, 194, 0.076);
   border: 1px solid rgba(225, 225, 225, 0.092);
   border-radius: 8px;
   padding: 1rem;
   box-sizing: border-box;
+ 
 }
 
 /* Botón proyectos */
@@ -155,20 +163,20 @@ body {
 }
 
 .projects:hover {
-  background-color: #1586be;
+  background-color: rgb(53, 158, 210);
   transform: translateY(-2px);
 }
 
-/* .nodes {
+.nodes {
   position: fixed;
   width: 100%;
-  top: 2rem;
+
   transform: translateX(50%, -50%);
   transform: rotate(170deg);
-  z-index: -999;
-  opacity: 0.95 !important;
+  z-index: -9;
+  opacity: 0.15 !important;
   pointer-events: none;
-} */
+}
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -228,24 +236,31 @@ body {
     display: flex !important;
     justify-content: space-between !important; 
     align-items: center !important;
-    padding: 0 1rem; 
+    padding-inline: 0% !important;
     overflow: visible;  
   }
+
   .navbar-brand {
     display: flex;
     justify-content: flex-start;    
-    /* padding: 0.3rem 0;  */
     overflow: visible; 
   }
+
   .navbar-brand img {        
     width: 60px;   
     height: 60px;
     display: block;
   }
 
-  .navbar-toggler {
-    margin: 0 !important;
-    align-self: center;
+  /* Ajuste de la hamburguesa */
+    .navbar-toggler {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-right: 5; 
+    margin: 0;
   }
 
   .navbar {
@@ -260,8 +275,6 @@ body {
     margin-bottom: 10rem;
     padding: 0 1rem;
     flex-direction: column;
-    
-    
   }
 
   .about-me .description {
@@ -286,9 +299,9 @@ body {
     margin-top: 1rem;
   }
 
-  .name {
-    margin-left: 10%;
-    margin-top: 4rem;
-  }
+ .name {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
 }
-
+}

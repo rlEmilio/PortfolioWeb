@@ -1,6 +1,6 @@
 /* Contenedor general con fondo translúcido y padding */
 .favorite-section {
-  background: linear-gradient(90deg, #001f39 0%,  #14324e  100%); 
+ /* background: linear-gradient(90deg, #155a93 0%, #2a557d 100%); */
   backdrop-filter: blur(10px);
   padding: 4% 2%;
   border-radius: 15px;
@@ -46,7 +46,7 @@
   gap: 5rem; 
   flex-wrap: wrap;
   margin-bottom: 4rem;
-  background-color: #f6f5f5;
+  /* background-color: #f6f5f5; */
   padding: 2rem;
   border-radius: 8px;
 }

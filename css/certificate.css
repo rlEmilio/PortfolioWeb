@@ -1,43 +1,39 @@
 .certificate {
   margin-top: 8rem;
   position: relative;
-  
 }
 
-.certificate-link{
+.certificate-link {
   margin-top: 2rem;
   margin-bottom: 10rem;
 }
 /* Imagen con overlay */
 .card-img-top {
-  height: 150px;          
-  width: auto;           
-  object-fit: contain;   
-  margin: 1rem;          
-  align-self: flex-start; 
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  margin: 1rem;
+  align-self: flex-start;
 }
 
 /* Estilo general de las cards */
 .card {
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 14px;
-  height: 420px; 
+  height: 420px;
   margin-bottom: 2rem;
   border: none;
   border-radius: 0.75rem;
   overflow: hidden;
   transition: all 0.3s ease;
   color: #fff;
-
 }
-
-
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Encabezado de cada card */
@@ -47,8 +43,8 @@
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  flex-shrink: 0; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
 }
 
 /* Texto de la card */
@@ -58,8 +54,8 @@
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;
-  flex-grow: 1; 
-  overflow: hidden; 
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 /* Responsive para pantallas menores a 900px */
@@ -70,20 +66,20 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    margin-bottom: 10rem; 
+    margin-bottom: 10rem;
     padding: 0 1rem;
   }
 
   /* Cards */
   .card {
-    height: auto; 
-    width: 90%;           
-    margin: 1rem 0;       
+    height: auto;
+    width: 90%;
+    margin: 1rem 0;
   }
 
   /* Imagen con overlay */
   .card-img-container {
-    height: 120px; 
+    height: 120px;
     width: 100%;
   }
 
@@ -94,9 +90,8 @@
 
   /* Texto de la card */
   .card-text {
-    height: auto;       
-    font-size: 0.85rem; 
-    -webkit-line-clamp: unset; 
+    height: auto;
+    font-size: 0.85rem;
     line-height: 1.4;
   }
 

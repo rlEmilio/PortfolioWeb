@@ -6,6 +6,11 @@
 .certificate-link {
   margin-top: 2rem;
   margin-bottom: 10rem;
+  
+}
+
+.certificate-link a{
+color: aqua;
 }
 /* Imagen con overlay */
 .card-img-top {

@@ -1,9 +1,8 @@
 /* Fondo general */
 body {
-  /* background-color: */
-  /* background-color: #090909; */
-  background: linear-gradient(90deg, #2b4b67 0%, #15355a 100%);
 
+  /* background-color: #090909; */
+  background: linear-gradient(90deg, #204261 0%, #265080 100%);
  
   margin: 0;
   padding: 0;
@@ -20,18 +19,17 @@ body {
 
 .name {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600; /* un poco más grueso para destacar */
+  font-weight: 600; 
   letter-spacing: 2px;
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #e5eef1, #ffffff, #ffffff, #ffffff);
-  background-size: 300% 100%; /* para animaciones suaves si quieres */
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #f6fdff, #cef8ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
   margin-top: 10rem;
   margin-bottom: 7rem;
-  text-shadow: 0 0 1px rgba(217, 247, 255, 0.919); /* brillo sutil para fondo oscuro */
+  text-shadow: 1px 1px 3px rgba(210, 254, 255, 0.522); 
 }
 
 .skills-container {

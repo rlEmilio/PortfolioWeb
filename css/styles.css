@@ -1,41 +1,44 @@
+
+
+
 /* Fondo general */
 body {
-
   /* background-color: #090909; */
-  background: linear-gradient(90deg, #204261 0%, #265080 100%);
- 
+    background: linear-gradient(90deg,#32426d 0%,#096bbb  100%);  
+
+
+
   margin: 0;
   padding: 0;
   z-index: 1;
   position: relative;
   min-height: 100vh;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  /* font-family: "Rubik", sans-serif; */
-  font-family: 'IBM Plex Mono', monospace;
-
-
-
+   font-family: "Rubik", sans-serif; 
+  font-family: "IBM Plex Mono", monospace;
 }
 
+
+
 .name {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-size: 2.8rem;
-  background: linear-gradient(90deg, #f6fdff, #cef8ff);
+  font-size: 2.5rem;
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
   margin-top: 10rem;
   margin-bottom: 7rem;
-  text-shadow: 1px 1px 3px rgba(210, 254, 255, 0.522); 
+  text-shadow: 1px 1px 1px rgba(210, 254, 255, 0.522);
 }
 
 .skills-container {
-  flex: 1 1 400px;         
-  width: 100%;              
-  max-width: 500px;       
+  flex: 1 1 400px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -48,12 +51,12 @@ body {
 }
 
 .skill span {
-  flex: 0 0 120px;         
+  flex: 0 0 120px;
   text-align: left;
 }
 
 .skill-bar {
-  flex: 1;                  
+  flex: 1;
   height: 15px;
   border-radius: 8px;
   overflow: hidden;
@@ -80,7 +83,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
 }
 
 /* Logo a la izquierda */
@@ -88,7 +90,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 1rem; 
+  padding-left: 1rem;
 }
 
 .navbar-brand img {
@@ -107,7 +109,6 @@ body {
   margin-left: 15px;
 }
 
-
 .navbar-nav .nav-link:hover {
   /* color: #127dff !important; */
   transition: 0.3s;
@@ -116,41 +117,39 @@ body {
 /* Sección principal centrada */
 .about-me {
   display: flex;
-  flex-wrap: wrap;           
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 13rem;
   margin-bottom: 30rem;
-  gap: 15rem; 
-                
+  gap: 15rem;
 }
 
 .about-me-content {
   display: flex;
-  flex-direction: column;     
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
-  max-width: 100%;
+ 
 }
 
 .about-me-content img {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
 .description {
-  flex: 1 1 500px;           
-  background-color: rgba(194, 194, 194, 0.076);
+ width: 650px;
+  background-color: rgba(194, 194, 194, 0.188);
   border: 1px solid rgba(225, 225, 225, 0.092);
   border-radius: 8px;
   padding: 1rem;
   box-sizing: border-box;
- 
 }
 
 /* Botón proyectos */
 .projects {
-  background-color: #27c0df;
+  background-color: #01e6ff;
   border: none;
   padding: 8px 18px;
   border-radius: 6px;
@@ -158,19 +157,20 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+ 
 }
 
 .projects:hover {
-  background-color: rgb(53, 158, 210);
+  /* background-color: rgb(24, 194, 255); */
   transform: translateY(-2px);
 }
 
 .nodes {
   position: fixed;
   width: 100%;
-
+  top: 15%;
   transform: translateX(50%, -50%);
-  transform: rotate(170deg);
+  /* transform: rotate(190deg); */
   z-index: -9;
   opacity: 0.15 !important;
   pointer-events: none;
@@ -226,38 +226,35 @@ body {
   transition: transform 0.3s ease;
 }
 
-
-
 @media screen and (max-width: 900px) {
-
   .navbar .container {
     display: flex !important;
-    justify-content: space-between !important; 
+    justify-content: space-between !important;
     align-items: center !important;
     padding-inline: 0% !important;
-    overflow: visible;  
+    overflow: visible;
   }
 
   .navbar-brand {
     display: flex;
-    justify-content: flex-start;    
-    overflow: visible; 
+    justify-content: flex-start;
+    overflow: visible;
   }
 
-  .navbar-brand img {        
-    width: 60px;   
+  .navbar-brand img {
+    width: 60px;
     height: 60px;
     display: block;
   }
 
   /* Ajuste de la hamburguesa */
-    .navbar-toggler {
+  .navbar-toggler {
     border: none;
     background: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    padding-right: 5; 
+    padding-right: 5;
     margin: 0;
   }
 
@@ -289,6 +286,7 @@ body {
   .about-me .projects {
     align-self: flex-start;
     margin-top: 1rem;
+   
   }
 
   .skills-container {
@@ -297,9 +295,9 @@ body {
     margin-top: 1rem;
   }
 
- .name {
-  display: block;
-  text-align: center;
-  margin-top: 4rem;
-}
+  .name {
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+  }
 }

@@ -337,7 +337,7 @@ body {
 
 /* RESPONSIVE  */
 
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   * {
     cursor: auto !important;
   }
@@ -353,6 +353,9 @@ body {
   .hero-section {
     justify-content: flex-start;
     padding-top: 4rem;
+    padding-bottom: 12rem;
+        min-height: auto;
+   
   }
 
   .about-me {
@@ -376,4 +379,8 @@ body {
   .section-line {
     min-width: 2rem;
   }
+
+
+
+  
 }

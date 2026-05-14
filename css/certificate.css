@@ -1,109 +1,177 @@
 .certificate {
-  margin-top: 8rem;
   position: relative;
+
+  margin-top: clamp(5rem, 10vw, 10rem);
+  margin-bottom: clamp(5rem, 8vw, 8rem);
 }
+
+/* SUBTÍTULOS */
+
+.certificate h5 {
+  position: relative;
+
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+
+  color: #f8fafc;
+
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-weight: 600;
+}
+
+.certificate h5::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 0.38rem;
+  height: 0.38rem;
+
+  border-radius: 50%;
+
+  background: #01e6ff;
+
+  box-shadow: 0 0 12px rgba(1, 230, 255, 0.4);
+}
+
+/* GRID */
+
+.certificate .row {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 260px), 260px)
+  );
+
+  justify-content: center;
+
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.certificate .col-md-4 {
+  width: auto;
+  max-width: none;
+
+  padding: 0;
+}
+
+/* LINK */
 
 .certificate-link {
-  margin-top: 2rem;
-  margin-bottom: 10rem;
-  
+  flex-shrink: 0;
+
+  color: #01e6ff;
+
+  text-decoration: none;
+
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 500;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
-.certificate-link a{
-color: aqua;
-}
-/* Imagen con overlay */
-.card-img-top {
-  height: 150px;
-  width: auto;
-  object-fit: contain;
-  margin: 1rem;
-  align-self: flex-start;
+.certificate-link:hover {
+  color: #01e6ff;
+
+  transform: translateY(-2px);
 }
 
-/* Estilo general de las cards */
+/* CARDS */
+
 .card {
+  width: 100%;
+  max-width: 260px;
+  min-height: 210px;
+
+  padding: 1.2rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-size: 14px;
-  height: 420px;
-  margin-bottom: 2rem;
-  border: none;
-  border-radius: 0.75rem;
+
   overflow: hidden;
-  transition: all 0.3s ease;
+
+  background: transparent;
+
+  border: 1px solid rgba(1, 230, 255, 0.12);
+  border-radius: 14px;
+
   color: #fff;
+
+  box-shadow: 0 0 20px rgba(1, 230, 255, 0.03);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4px);
+
+  border-color: rgba(1, 230, 255, 0.35);
+
+  box-shadow: 0 0 28px rgba(1, 230, 255, 0.08);
 }
 
-/* Encabezado de cada card */
+/* TÍTULO */
+
 .card-title {
-  background: #222;
-  padding: 0.75rem;
-  font-size: 1rem;
-  font-weight: bold;
   margin: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  flex-shrink: 0;
+  margin-bottom: 0.9rem;
+
+  padding: 0 0 0.8rem;
+
+  background: transparent;
+
+  color: #f8fafc;
+
+  text-align: center;
+
+  font-size: clamp(0.88rem, 2vw, 0.95rem);
+  line-height: 1.45;
+
+  border-bottom: 1px solid rgba(1, 230, 255, 0.08);
 }
 
-/* Texto de la card */
+/* TEXTO */
+
 .card-text {
-  background: #454444;
-  padding: 1rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0;
   flex-grow: 1;
+
+  margin: 0;
+
+  padding: 0.8rem 1rem 1rem;
+
   overflow: hidden;
+
+  background: transparent;
+
+  color: #fd718b;
+
+  font-size: clamp(0.76rem, 1.8vw, 0.78rem);
+  line-height: 1.6;
 }
 
-/* Responsive para pantallas menores a 900px */
-@media (max-width: 900px) {
-  /* Contenedor de la sección */
-  .certificate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 10rem;
-    padding: 0 1rem;
+/* MÓVIL */
+
+@media (max-width: 480px) {
+  .certificate .row {
+    grid-template-columns: 1fr;
   }
 
-  /* Cards */
   .card {
-    height: auto;
-    width: 90%;
-    margin: 1rem 0;
-  }
-
-  /* Imagen con overlay */
-  .card-img-container {
-    height: 120px;
-    width: 100%;
-  }
-
-  .card-img-top {
-    max-height: 100%;
     max-width: 100%;
   }
 
-  /* Texto de la card */
-  .card-text {
-    height: auto;
-    font-size: 0.85rem;
-    line-height: 1.4;
-  }
-
-  /* Encabezado */
-  .card-title {
-    font-size: 0.95rem;
-    padding: 0.5rem;
-    text-align: center;
+  .certificate-link {
+    margin-top: 0.5rem;
   }
 }

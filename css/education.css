@@ -1,0 +1,109 @@
+.education-section {
+  position: relative;
+  overflow: hidden;
+
+  margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+/* TIMELINE */
+
+.education-timeline {
+  position: relative;
+  padding-left: clamp(1.4rem, 4vw, 2rem);
+  border-left: none;
+}
+
+.education-timeline::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  bottom: 0;
+
+  width: 1px;
+
+  background: rgba(1, 230, 255, 0.15);
+}
+
+/* ITEM */
+
+.education-item {
+  position: relative;
+
+  padding-bottom: clamp(3rem, 6vw, 4rem);
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+}
+
+/* DOT */
+.education-dot {
+  position: absolute;
+
+  left: clamp(-2.35rem, -4vw, -1.8rem);
+  top: 0.45rem;
+
+  width: 0.75rem;
+  height: 0.75rem;
+
+  border-radius: 50%;
+  background: #01e6ff;
+
+  box-shadow:
+    0 0 8px rgba(1, 230, 255, 0.9),
+    0 0 18px rgba(1, 230, 255, 0.45);
+}
+/* TITLES */
+
+.education-title {
+  margin-bottom: 0.7rem;
+
+  color: white;
+
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.education-subtitle {
+  margin-bottom: 1rem;
+
+  color: #01e6ff;
+
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 600;
+}
+
+/* DESCRIPTION */
+
+.education-description {
+  max-width: 900px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  line-height: 1.9;
+
+  font-size: clamp(0.95rem, 1.5vw, 1.02rem);
+}
+
+/* MÓVIL PEQUEÑO */
+
+@media (max-width: 480px) {
+  .education-timeline {
+    padding-left: 1.2rem;
+  }
+
+  .education-dot {
+    left: -1.55rem;
+    top: 0.42rem;
+
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .education-description {
+    line-height: 1.8;
+  }
+}

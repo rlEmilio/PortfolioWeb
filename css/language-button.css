@@ -1,0 +1,64 @@
+.language-btn {
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  margin-left: 0.5rem;
+  padding: 0;
+
+  border: 1px solid rgba(1, 230, 255, 0.18);
+  border-radius: 0.75rem;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: clamp(0.72rem, 1.8vw, 0.9rem);
+  font-weight: 600;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.language-btn:hover {
+  color: #01e6ff;
+
+  border-color: rgba(1, 230, 255, 0.45);
+
+  box-shadow:
+    0 0 12px rgba(1, 230, 255, 0.18),
+    0 0 24px rgba(1, 230, 255, 0.08);
+
+  transform: translateY(-1px);
+}
+
+.language-btn:active {
+  transform: scale(0.96);
+}
+
+.language-btn:focus {
+  outline: none;
+}
+
+/* móvil */
+
+@media (max-width: 991px) {
+  .language-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+
+    margin-left: 0;
+  }
+}

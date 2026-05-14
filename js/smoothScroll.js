@@ -2,7 +2,7 @@ window.onload = function() {
 
   const scrollTopBtn = document.querySelector('.scroll-top');
   const projectsPage = document.querySelector('.projects-page');
-  const languagesPage = document.querySelector('#tech-link');
+  const topPage = document.querySelector('top');
 
   // Click en la flecha para subir al top
   scrollTopBtn.addEventListener('click', function(e) {
@@ -17,10 +17,10 @@ window.onload = function() {
   });
 
 
-    // Click en el botón de lenguajes
-  document.querySelector('.languages').addEventListener('click', function(e) {
+    // Click en el botón de top
+  document.querySelector('#top').addEventListener('click', function(e) {
     e.preventDefault();
-    languagesPage.scrollIntoView({ behavior: 'smooth' });
+    topPage.scrollIntoView({ behavior: 'smooth' });
   });
 
 

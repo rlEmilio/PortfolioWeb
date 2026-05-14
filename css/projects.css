@@ -1,101 +1,122 @@
-.project-background {
-  /* background: linear-gradient(90deg, #155a93 0%, #2a557d 100%); */
-  background-color: aliceblue;
-  border-radius: 8px;
-}
+/* CONTENEDOR PRINCIPAL */
 
-/* Contenedor principal centrado */
 .project-full {
-  display: flex;
-  flex-direction: column; 
-  gap: 2rem;
+  width: min(100%, 1100px);
 
- 
-  padding: 2rem;
-  box-sizing: border-box;
-  margin-bottom: 15rem;
-}
-
-/* Contenedor de cabecera + descripción + carrusel */
-.project-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+
+  gap: 2rem;
+
+  padding: clamp(1rem, 3vw, 2rem);
+
+  margin-inline: auto;
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+
+  border: 1px solid rgba(1, 230, 255, 0.12);
+
+  box-sizing: border-box;
 }
 
-/* Descripción */
+/* LAYOUT */
+
+.project-content {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns:
+    minmax(240px, 300px)
+    minmax(0, 1fr);
+
+  align-items: start;
+  justify-content: center;
+
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* DESCRIPCIÓN */
+
 .proyect-description {
-  flex: 1 1 100%;
-  max-width: 300px;
-  padding: 0 1rem;
+  width: 100%;
+  max-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   text-align: left;
+}
+
+.proyect-description p {
+  margin: 0;
+
+  line-height: 1.8;
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
 }
 
 .proyect-description button {
   margin-top: 1rem;
-  padding: 10px;
+  padding: 0.65rem 1rem;
 }
 
-/* Carrusel de imágenes */
+/* HEADER */
+
+.project-header {
+  margin-bottom: 2rem;
+
+  color: #fd718b;
+
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* CARRUSEL */
+
 .projects-carousel {
-  flex: 1 1 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   width: 100%;
-  max-width: 100%;
-}
 
-/* Video en carrusel */
-
-.projects-video {
- 
-  width: 100%;
-  min-height: 500px;
-  position: relative;
-  height:100%;
-  
-  
-}
-
-.projects-video video {
-  width: 1300px;       
-  max-width: 100%;   
-  height:100%;     
-  border-radius: 8px;
   display: block;
-  margin: 0 auto; 
-  min-height: 500px;   
-  object-fit: cover;   
+
+  overflow: hidden;
+
+  margin-top: 0.35rem;
+
+  border-radius: 12px;
 }
 
-/* Ajuste de imágenes del carrusel */
+/* IMÁGENES */
+
 .projects-carousel img {
-  width: 100%;       
-  max-width: 100%;   
-  border-radius: 8px;
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
   display: block;
-  margin: 0; 
-  min-height: 500px;   
-  object-fit: cover;  
+  margin: 0 auto;
+
+  border-radius: 12px;
+
+  object-fit: cover;
 }
 
-/* Carrusel: estilo de flechas */
+/* FLECHAS */
+
 .carousel-control-prev,
 .carousel-control-next {
-  width: 50px;
-  height: 50px;
+  width: clamp(2.4rem, 5vw, 2.9rem);
+  height: clamp(2.4rem, 5vw, 2.9rem);
+
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.45);
+
+  border-radius: 50%;
+
   z-index: 2;
 }
 
@@ -106,65 +127,30 @@
   background-position: center;
 }
 
-/* Transición de items del carrusel */
+/* ANIMACIÓN */
+
 .carousel-item {
+  height: 100%;
+
   transition: transform 0.3s ease-in-out;
 }
 
-/* Header de proyecto */
-.project-header {
-  margin-bottom: 2rem;
-}
+/* RESPONSIVE */
 
-/* --- RESPONSIVE --- */
-/* --- RESPONSIVE --- */
-@media screen and (min-width: 900px) {
-
-
-
+@media (max-width: 900px) {
   .project-content {
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-    gap: 2rem; /* separa descripción y carrusel */
-  }
-
-  .proyect-description {
-    flex: 1 1 30%;  
-    max-width: 400px;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-  }
-
-  .projects-carousel {
-    flex: 0 0 800px; /* ancho fijo para el carrusel */
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-.projects-page {
-  margin-top: 20rem;
-}
-
-@media screen and (max-width: 900px) {
-  .project-content {
-    align-items: flex-start;
-  } 
-
-  .project-full{
-    margin-top: -10rem;
+    grid-template-columns: 1fr;
   }
 
   .proyect-description {
     max-width: 100%;
-    padding: 0;
   }
 
-  .proyect-description button {
-    align-self: flex-start;
+  .projects-carousel {
+    width: 100%;
+  }
+
+  .project-header {
+    margin-bottom: 1.2rem;
   }
 }

@@ -346,6 +346,10 @@ body {
     cursor: auto;
   }
 
+    .custom-cursor {
+    display: none !important;
+  }
+
   .hero-section {
     justify-content: flex-start;
     padding-top: 4rem;

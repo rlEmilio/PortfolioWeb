@@ -183,9 +183,11 @@
     padding-block: 0.8rem;
   }
 
-  .navbar .container {
-    flex-wrap: wrap;
+    .navbar .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+
 
   .navbar-collapse {
     width: 100%;
@@ -215,5 +217,19 @@
 
     justify-content: center;
     gap: 1rem;
+  }
+
+    .navbar-brand img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
   }
 }
